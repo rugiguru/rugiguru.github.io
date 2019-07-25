@@ -766,6 +766,24 @@ nav a.nav-link:active, nav a.nav-link:focus {
     z-index: 1
 }
 
+#qualification .container {
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#qualification .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+}
+
 .timeline-block {
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
@@ -836,6 +854,12 @@ nav a.nav-link:active, nav a.nav-link:focus {
         left: 8px;
         width: 2px;
     }
+
+    #qualification .container:before {
+        left: 8px;
+        width: 2px;
+    }
+
     .timeline-block {
         width: 100%;
         margin-bottom: 30px;
